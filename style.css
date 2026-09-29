@@ -1,48 +1,25 @@
+/* Importamos la fuente Newsreader */
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&display=swap');
 
 html, body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  overflow-x: hidden;
-  background-color: #0081a7;
   font-family: 'Newsreader', serif;
   color: #ffffff;
 }
 
-/* Estilo para el video directo */
-.video-directo-fondo {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -2;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
+body {
+  /* Fondo con la imagen turquesa cristalina de agua */
+  background-image: linear-gradient(rgba(0, 196, 216, 0.45), rgba(0, 168, 150, 0.55)), 
+                    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
-/* Capa azulejada semitransparente por encima del video */
-.capa-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 196, 216, 0.35); /* Ajusta este valor si quieres ver más o menos el video */
-  z-index: -1;
-  pointer-events: none;
-}
-
-/* 3. Contenido */
-.contenido-frontal {
-  position: relative;
-  z-index: 1;
-}
-
-/* Portada */
+/* Portada principal centrada */
 h1 {
   font-family: 'Newsreader', serif;
   font-weight: 400;
@@ -70,7 +47,7 @@ a:hover {
   opacity: 0.85;
 }
 
-/* Reflexión */
+/* Reflexión (Página 2) */
 .contenedor-reflexion {
   max-width: 680px;
   margin: 0 auto;
