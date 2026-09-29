@@ -1,31 +1,97 @@
-/* ↓ EN LAS PRIMERA LÍNEA PODEMOS ENLAZAR LAS FUENTES QUE USAREMOS ↓ */
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&display=swap');
 
-/* ↓ A PARTIR DE ESE PUNTO PODEMOS LLAMAR TODAS LAS PROPIEDADES DE NUESTRAS CLASES Y ID´S ↓ */
-body {
-  background-color: #ffaffc;
+html, body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #0081a7;
+  font-family: 'Newsreader', serif;
+  color: #ffffff;
 }
 
-h1 {
-  /* font-family: 'Nunito Sans';*/
-  font-family: 'Honk', system-ui;
-  font-weight: 500;
-  margin: 0;
+/* 1. iframe */
+.video-fondo-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.iframe-fondo {
+  width: 300vw;
+  height: 300vh;
   position: absolute;
-  font-size: 20vh;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translate(-50%, -50%);
+}
+
+
+.capa-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, rgba(0, 196, 216, 0.45) 0%, rgba(0, 168, 150, 0.55) 100%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* 3. Contenido */
+.contenido-frontal {
+  position: relative;
+  z-index: 1;
+}
+
+/* Portada */
+h1 {
+  font-family: 'Newsreader', serif;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0;
+  position: absolute;
+  font-size: 10vh;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  width: 100%;
 }
 
 a {
-  color: blue;
+  color: #ffffff;
   text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
 }
 
 a:hover {
-  background-color: #36fcff;
+  border-bottom: 2px solid #ffffff;
+  opacity: 0.85;
+}
+
+/* Reflexión */
+.contenedor-reflexion {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 80px 25px;
+  font-size: 1.35rem;
+  line-height: 1.8;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.contenedor-reflexion p {
+  margin-bottom: 28px;
+}
+
+.volver {
+  margin-top: 50px;
+  font-size: 1.1rem;
 }
