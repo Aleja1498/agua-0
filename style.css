@@ -10,35 +10,28 @@ html, body {
   color: #ffffff;
 }
 
-/* 1. iframe */
-.video-fondo-wrapper {
+/* Estilo para el video directo */
+.video-directo-fondo {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -2;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.iframe-fondo {
-  width: 300vw;
-  height: 300vh;
-  position: absolute;
   top: 50%;
   left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -2;
   transform: translate(-50%, -50%);
+  object-fit: cover;
 }
 
-
+/* Capa azulejada semitransparente por encima del video */
 .capa-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(135deg, rgba(0, 196, 216, 0.45) 0%, rgba(0, 168, 150, 0.55) 100%);
+  background: rgba(0, 196, 216, 0.35); /* Ajusta este valor si quieres ver más o menos el video */
   z-index: -1;
   pointer-events: none;
 }
