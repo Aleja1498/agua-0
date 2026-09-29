@@ -9,16 +9,12 @@
 </head>
 <body>
 
-    <!-- Video de fondo iframe (agua en bucle sin sonido) -->
-    <div class="video-fondo-wrapper">
-        <iframe 
-            src="https://www.youtube.com/embed/8I-Q_H1lXhA?autoplay=1&mute=1&controls=0&loop=1&playlist=8I-Q_H1lXhA&playsinline=1&showinfo=0&rel=0" 
-            title="Agua de fondo" 
-            frameborder="0" 
-            allow="autoplay; encrypted-media" 
-            class="iframe-fondo">
-        </iframe>
-    </div>
+  <!-- Video directo HTML5 de agua en movimiento -->
+<video autoplay loop muted playsinline class="video-directo-fondo">
+    <source src="https://assets.mixkit.co/videos/preview/mixkit-clear-water-in-a-swimming-pool-1180-large.mp4" type="video/mp4">
+</video>
+
+<div class="capa-overlay"></div>
 
     <!-- Capa protectora para suavizar el fondo -->
     <div class="capa-overlay"></div>
