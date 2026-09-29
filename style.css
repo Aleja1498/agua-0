@@ -1,4 +1,4 @@
-/*  fuente  */
+/* fuente */
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&display=swap');
 
 html, body {
@@ -10,9 +10,9 @@ html, body {
 }
 
 body {
-  /* Fondo */
-  background-image: linear-gradient(rgba(0, 196, 216, 0.25), rgba(0, 168, 150, 0.35)), 
-                    url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1920&q=80');
+  /* Fondo  */
+  background-image: linear-gradient(rgba(0, 196, 216, 0.2), rgba(0, 168, 150, 0.3)), 
+                    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -20,7 +20,7 @@ body {
   position: relative;
 }
 
-/* Portada principal */
+/* Portada  */
 h1 {
   font-family: 'Newsreader', serif;
   font-weight: 400;
@@ -48,7 +48,7 @@ a:hover {
   opacity: 0.85;
 }
 
-/* Contenedor de la reflexión (Página 2) */
+/*  la reflexión (Página 2) */
 .contenedor-reflexion {
   max-width: 680px;
   margin: 0 auto;
