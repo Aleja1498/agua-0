@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
-  <!-- ↓ TODA ESTA ES INFORMACIÓN DEL <head> QUE NO VEMOS EN LA PÁGINA ↓ -->
-  <head>
-    <!-- ↓ Lugar para el favicon ↓ -->
-    <link rel="icon" href="elementos\perrito.png" />
-    <!-- ↓ Lugar para el nombre de la página ↓ -->
-    <title>Perrito</title>
-    <!-- ↓ Lugar para enlazar nuestra página de estilos ↓ -->
-    <link rel="stylesheet" href="/style.css" />
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="elementos/perrito.png" />
+    <title>También se habita la web</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-  <!-- ↓ El <body> ES LO QUE VEMOS EN LA PÁGINA ↓ -->
-  <body>
-    <h1><a href="https://www.youtube.com/channel/UCFKE7WVJfvaHW5q283SxchA" target="_blank">Perrito</a></h1>
-  </body>
+    <!-- Video de fondo iframe (agua en bucle sin sonido) -->
+    <div class="video-fondo-wrapper">
+        <iframe 
+            src="https://www.youtube.com/embed/8I-Q_H1lXhA?autoplay=1&mute=1&controls=0&loop=1&playlist=8I-Q_H1lXhA&playsinline=1&showinfo=0&rel=0" 
+            title="Agua de fondo" 
+            frameborder="0" 
+            allow="autoplay; encrypted-media" 
+            class="iframe-fondo">
+        </iframe>
+    </div>
+
+    <!-- Capa protectora para suavizar el fondo -->
+    <div class="capa-overlay"></div>
+
+    <!-- Contenido principal centrado -->
+    <main class="contenido-frontal">
+        <h1><a href="pagina-2.html">Refugio</a></h1>
+    </main>
+
+</body>
 </html>
