@@ -11,7 +11,7 @@ html, body {
 
 body {
   /* imágen */
-  background-image: linear-gradient(rgba(0, 40, 50, 0.15), rgba(0, 30, 40, 0.25)), 
+ background-image: linear-gradient(rgba(0, 40, 50, 0.15), rgba(0, 30, 40, 0.25)), 
                     url('fondo.jpeg');
   background-size: cover;
   background-position: center;
